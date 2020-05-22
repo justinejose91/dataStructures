@@ -1,12 +1,12 @@
-#include <iostream>
-// Find overlapping intervals and return in the result vector
-/* Example 1:
+/* Find overlapping intervals and return in the result vector
+   Example 1:
    {1,3}, {5, 7}, {9, 11} returns []
    Example 2:
    {5, 7}, {1, 10}, {15, 23}, {5, 7} returns [{5, 7}, {5, 7}, {1, 10}]
    Example 3:
    {10, 20}, {30, 40}, {50, 60}, {1, 100} returns [{10, 20}, {30, 40}, {50, 60}, {1, 100}]
 */
+#include <iostream>
 #include <vector>
 #include <stack>
 #include <unordered_set>
