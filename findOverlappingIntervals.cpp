@@ -20,7 +20,7 @@ bool myCompare(const p_t& p1, const p_t & p2) {
     return p1.second < p2.second;
 }
 
-void findOverlappingPoints(vector<p_t>& vec)
+void findOverlappingIntervals(vector<p_t>& vec)
 {
     if(vec.empty()) {
         return;
@@ -60,4 +60,9 @@ void findOverlappingPoints(vector<p_t>& vec)
     for(const auto& e : res) {
         cout << e.first << " " << e.second << endl;
     }
+}
+int main()
+{
+    vector<p_t> vec {{5, 7}, {1, 10}, {15, 23}, {5, 7}};
+    findOverlappingIntervals(vec);
 }
